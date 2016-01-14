@@ -8,9 +8,57 @@
 
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Portland Restaurant Recommender</title>
   </head>
-  <body>
 
+  <body>
+    <form id="blanks">
+
+      <div id="location">
+        <h3>Which side of the river?</h3>
+        <label class="radio-inline">
+          <input type="radio" name="locationOptions" id="east" value="east" checked> East of the River
+        </label>
+
+        <label class="radio-inline">
+          <input type="radio" name="locationOptions" id="west" value="west"> West of the River
+        </label>
+
+    </div>
+
+    <div id="priceRange">
+      <h3>What is your Price Range?</h3>
+      <label class="radio-inline">
+        <input type="radio" name="priceOptions" id="cheap" value="cheap" checked>$-$$
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="priceOptions" id="spendy" value="spendy">$$$-$$$$
+      </label>
+    </div>
+    <div id="foodType">
+      <h3> Which of these cuisines would you like to eat?</h3>
+      <label class="radio-inline">
+        <input type="radio" name="foodOptions" id="american" value="american" checked> American (new)
+      </label>
+
+      <label class="radio-inline">
+        <input type="radio" name="foodOptions" id="italian" value="italian"> Italian
+      </label>
+
+      <label class="radio-inline">
+        <input type="radio" name="foodOptions" id="french" value="french"> French
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-default"> Get Your Recommendation</button>
+  </form>
+
+    <div class="results">
+      <div>
+        <p> We recommend <span class="restaurantSelection"></span>!</p>
+
+
+     </div>
+   </div>
   </body>
 </html>
